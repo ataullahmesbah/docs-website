@@ -44,15 +44,15 @@ const Drag = () => {
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10 space-y-3 lg:space-y-28">
-        <div className="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-16 sm:items-start sm:justify-start lg:mt-1 lg:space-x-48 mt-14 sm:mt-28">
+        <div className="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-16 sm:items-start sm:justify-start lg:mt-1 lg:space-x-48 mt-40 sm:mt-28">
           {/* ... Your content ... */}
 
 
           <div className="text-center sm:text-left">
-            <h6 className="text-3xl sm:text-5xl text-white py-4 font-serif">
+            <h6 className="text-3xl sm:text-5xl md:text-3xl md:px-10 text-white py-4 font-serif">
               Create a free LIKHO edit, PDF document
             </h6>
-            <p className="text-3xl sm:text-5xl text-white py-4 font-mono">
+            <p className="text-3xl sm:text-5xl md:px-10 text-white py-4 font-mono">
               for Online Free.
             </p>
           </div>
