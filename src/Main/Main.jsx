@@ -7,6 +7,7 @@ import FAQ from "../pages/Home/FAQ/FAQ";
 import Review from "../pages/Home/Review/Review";
 import Instruction from "../pages/Instruction/Instruction";
 import MarqueeSection from "../pages/MarqueeSection/MarqueeSection";
+
 import ReadSection from "../pages/ReadSection/ReadSection";
 import TemplateSection from "../pages/Template/TemplateSection";
 

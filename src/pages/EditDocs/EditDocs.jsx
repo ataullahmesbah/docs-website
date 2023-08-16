@@ -39,14 +39,15 @@ const EditDocs = () => {
 
     <div className="bg-gradient-to-r from-gray-600 via-blue-900 to-blue-400 lg:mt-[-239px]">
       <Container>
-        <h2 className="text-center text-orange-200 font-bold text-5xl pt-8 lg:pt-28">
+      <h2 className="text-center text-orange-200 font-bold text-5xl pt-8 lg:pt-28">
           Online Documents Editor
         </h2>
-        <div className="flex flex-col-reverse lg:flex-row lg:h-auto  space-y-6 lg:space-y-0 lg:space-x-10 mx-auto pt-4 lg:pt-28 justify-center pb-10">
+        <div className="flex flex-col-reverse lg:flex-row lg:h-auto space-y-6 lg:space-y-0 lg:space-x-10 mx-auto pt-4 lg:pt-28 justify-center pb-10">
           
 
 
-          <div className="w-full lg:w-1/2 p-4 lg:px-20 space-y-4 lg:space-y-6">
+        <div className="w-full lg:w-1/2 p-4 lg:px-20 space-y-4 lg:space-y-6">
+
             <h2 className="text-2xl lg:text-5xl font-bold mb-2 text-gray-300">
               Build your best ideas together, in Likho Docs
             </h2>
@@ -61,6 +62,8 @@ const EditDocs = () => {
             </button>
           </div>
 
+
+           {/* Right Column */}
           <div className="w-full lg:w-1/2 p-4 border-3 rounded-md bg-white overflow-y-auto">
             <ReactQuill
               value={editorHtml}
