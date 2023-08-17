@@ -63,7 +63,6 @@ const Developer = () => {
                                 </p>
                             </div>
 
-
                             <div className='flex items-center gap-3 md:flex-row  justify-center pt-10 mb-20'>
                                 <div className='border-2 border-blue-300 rounded-full '>
                                     <img className=' w-10 h-10 md:w-16 md:h-16 rounded-full' src={dev?.image} alt={dev?.name} />
@@ -72,10 +71,7 @@ const Developer = () => {
                                 <div className="">
                                     <p className='border-y-8 border border-black md:h-auto'></p>
                                     <p className='border-y-8 border border-black md:h-auto'></p>
-
-
                                 </div>
-
 
                                 <div className='swiper-details px-2 space-y-[-2px]'>
                                     <p className='text-black font-semibold'>{dev?.name}</p>
