@@ -26,9 +26,9 @@ const RotatingImage = styled.img`
 const Drag = () => {
   return (
     <div className="relative h-screen overflow-hidden bg-gradient-to-b from-blue-900 via-blue-800">
-    {/* Banner Image Background */}
+      {/* Banner Image Background */}
       <div
-        className="absolute inset-0 bg-cover bg-center  lg:pt-20 h-[730px]"
+        className="absolute inset-0 bg-cover bg-center lg:pt-20 h-[810px]"
         style={{
           backgroundImage: `url(${banner})`,
         }}
@@ -43,30 +43,23 @@ const Drag = () => {
       ></div>
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center z-10 space-y-3 lg:space-y-28">
-        <div className="flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-16 sm:items-start sm:justify-start lg:mt-1 lg:space-x-48 mt-40 sm:mt-28">
+      <div className="absolute inset-0 flex flex-col justify-center z-10 space-y-14 sm:space-y-16 lg:space-y-44">
+        <div className="flex  flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-16 sm:items-start sm:justify-start lg:mt-28 lg:space-x-48 mt-40 md:pt-4 sm:mt-28">
           {/* ... Your content ... */}
-
-
-          <div className="text-center sm:text-left">
-            <h6 className="text-3xl sm:text-5xl md:text-3xl md:px-10 text-white py-4 font-serif">
-              Create a free LIKHO edit, PDF document
+          <div className="text-center sm:text-left lg:px-44 px-5">
+            <h6 className="text-2xl sm:text-5xl md:text-5xl text-white font-serif mx-auto">
+              Create a free <span className="from-accent-content font-sans text-5xl">Likho</span> edit, PDF document
             </h6>
-            <p className="text-3xl sm:text-5xl md:px-10 text-white py-4 font-mono">
+            <p className="text-2xl sm:text-5xl lg:text-5xl text-white py-4 font-mono">
               for Online Free.
             </p>
           </div>
-
-          <div className="space-y-4 sm:space-y-8">
-            <p className="font-bold text-xl sm:text-3xl pt-5 mb-0 text-white text-center sm:text-left">
-              Document simplified Likho.
-            </p>
-            <button className=" font-bold text-xl p-2 m-3  text-white rounded-lg btn-info font-sans">Explore Likho</button>
-          </div>
+          {/* ... Other content ... */}
         </div>
 
-        <div className="lg:pb-1 pb-14 sm:pb-28">
-          <div className="z-10 lg:w-[930px] bg-gray-200 p-4 rounded-lg mx-auto sm:w-[80%] md:w-[70%]">
+        {/* drag and drop div start */}
+        <div className="lg:pb-1 pb-14 sm:pb-28 lg:w-[930px] mx-auto sm:w-4/5 md:w-3/5">
+          <div className="bg-gray-200 p-4 rounded-lg">
             <Upload.Dragger
               action="http://localhost:5173/"
               listType="picture"
@@ -114,6 +107,7 @@ const Drag = () => {
             </Upload.Dragger>
           </div>
         </div>
+        {/* drag and drop div end */}
       </div>
     </div>
   );

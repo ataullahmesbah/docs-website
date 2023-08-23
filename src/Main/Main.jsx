@@ -1,4 +1,6 @@
 
+import ProductsLevelUI from "../Layout/Dashboard/DocumentationTypes";
+import DocumentationTypes from "../Layout/Dashboard/DocumentationTypes";
 import Developer from "../pages/Developer/Developer";
 import Drag from "../pages/Drag&Drop/Drag";
 import EditDocs from "../pages/EditDocs/EditDocs";
@@ -25,6 +27,7 @@ const Main = () => {
             <Instruction></Instruction>
             <Review></Review>
             <Developer></Developer>
+            <ProductsLevelUI></ProductsLevelUI>
 
             {/* <Counter></Counter>
 
